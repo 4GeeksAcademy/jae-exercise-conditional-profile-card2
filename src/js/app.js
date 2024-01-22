@@ -1,4 +1,3 @@
-import { validateSchema } from "webpack";
 import "../style/index.css";
 
 /**
@@ -37,10 +36,10 @@ function render(variables = {}) {
     firstName = variables.name;
   }
   let lastName = "";
-  if (variables.name == null) {
+  if (variables.lastName == null) {
     lastName = "Smith";
   } else {
-    lastName = variables.lastname;
+    lastName = variables.lastName;
   }
   let twitterLink = "";
   if (variables.twitter == null) {
